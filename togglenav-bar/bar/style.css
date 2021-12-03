@@ -1,0 +1,54 @@
+.same{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 25px;
+    margin-top: 8px;
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.parent{
+    background-color: powderblue;
+    display: flex;
+    justify-content: space-between;
+    /* width: fit-content; */
+}
+.same{
+    display: flex;
+}
+.back:hover{
+    background-color: blue;
+    transition: 3s;
+}
+button{
+    display: none;
+    position:fixed;
+    top:15px;
+    right:10px;
+}
+@media screen and (max-width:890px) {
+    .same{
+        display: none;
+    }
+    button{
+        display: block;
+    }
+    .link2{
+        display: block;
+        flex-direction: column;
+    }
+    .link2 a{
+        margin: 0px;
+        padding: 0px;
+    }
+    .link2 a:hover{
+        border: 1px solid green;
+    }
+}
