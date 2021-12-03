@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+    <h1 id="content">0</h1>
+    <button onclick="add()" id="add">Increase </button>
+    <button onclick="emp()" id="emp">Reset</button>
+    <button onclick="subtract()" id="sub">Decrease</button>
+    </div>
+</body>
+<script>
+    let content =document.getElementById("content");
+    let counter=0;
+    function emp(){
+        content.innerHTML=0;   
+    }
+    function add(){
+        content.innerHTML=counter;
+        counter=counter + 1;
+    }
+    function subtract(){
+        content.innerHTML=counter;
+        counter=counter - 1;
+    }
+
+</script>
+</html>
