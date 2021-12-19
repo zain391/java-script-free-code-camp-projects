@@ -1,0 +1,28 @@
+
+.about{
+padding: 50px 20px;
+
+display  : grid;
+background-color: cadetblue;
+align-items: center;
+
+}
+
+
+ .content{
+display: none;
+
+}
+.content.active{
+
+display: block;
+
+}  
+ .tab-btn{
+    background-color: none;
+}
+
+.tab-btn.active{
+    background-color: lightgray;
+
+} 
