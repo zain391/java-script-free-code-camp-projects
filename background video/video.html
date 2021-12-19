@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <div class="container">
+    <video autoplay muted loop src="Free_Background_Video_Effects_HD(480p).mp4" id="video" ></video>
+
+    <div class="text">
+        <h2>this is my video</h2>
+        <button id="btn" onclick="myfunction()" >play/puase</button>
+    </div>
+</div>
+</body>
+<script>
+let video = document.getElementById("video");
+let btn = document.getElementById("btn");
+
+function myfunction(){
+if(video.paused){
+    video.play();
+    btn.innerHTML = 'pause';
+
+}
+else{
+    video.pause();
+    btn.innerHTML = 'play';
+}
+}
+
+</script>
+</html>
